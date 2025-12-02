@@ -9,7 +9,10 @@ app.use(cors());
 app.use(express.json());
 
 const authRoutes = require('./src/routes/auth');
+const productRoutes = require('./src/routes/products');
+
 app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
 
 app.get('/', (req, res) => {
   res.send('Price Drop Alert API is running');
