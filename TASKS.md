@@ -1,0 +1,21 @@
+# Phase 1: MVP Setup & Core Logic
+
+- [x] **Project Initialization**: Setup React client and Express server structure.
+- [x] **Database Setup**: Configure Prisma with SQLite (Development).
+- [x] **Backend API**:
+    - [x] Authentication (Register/Login).
+    - [x] Product Management (CRUD).
+- [x] **Scraping Service**: Implement basic metadata scraping (Cheerio).
+- [x] **Frontend UI**:
+    - [x] Landing Page.
+    - [x] Authentication Forms.
+    - [x] Dashboard with Product Grid.
+- [ ] **Deployment & Configuration** (Current Focus):
+    - [ ] **Fix Railway Crash**:
+        - [ ] Add `postinstall` script for Prisma generation.
+        - [ ] Configure `CORS` for production.
+        - [ ] Ensure correct port binding.
+    - [ ] **Fix Vercel Deployment**:
+        - [ ] Configure Environment Variables for API URL.
+        - [ ] Handle CORS on client side.
+- [ ] **Integration Testing**: Verify flow from Vercel -> Railway -> DB.
